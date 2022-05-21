@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npx scully --",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "scully": "npx scully --",
@@ -25,6 +25,7 @@
     "@scullyio/ng-lib": "^2.1.32",
     "@scullyio/platform-server": "^2.1.0",
     "@scullyio/scully": "^2.1.32",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.32",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
