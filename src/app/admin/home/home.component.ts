@@ -1,10 +1,11 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit, RendererFactory2 } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnInit, RendererFactory2, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'], 
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent implements OnInit {
   private renderer2;
