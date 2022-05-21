@@ -1,6 +1,6 @@
 [build]
-  command="ng build"
-  publish="dist/salottino"
+  command="ng build —prod && npm run scully"
+  publish="dist/static"
 
 [[redirects]]
   from = "/*"
