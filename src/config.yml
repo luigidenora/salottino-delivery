@@ -1,10 +1,11 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
+locale: it
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "blog" # The path to the folder where the documents are stored
+  - name: "product" # Used in routes, e.g., /admin/collections/blog
+    label: "Product" # Used in the UI
+    folder: "product" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
