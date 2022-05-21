@@ -9,6 +9,12 @@ export const config: ScullyConfig = {
   spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
   routes: {
+    '/products/:title': {
+      type: 'contentFolder',
+      title: {
+        folder: "./products"
+      }
+    },
     '/blog/:slug': {
       type: 'contentFolder',
       slug: {
